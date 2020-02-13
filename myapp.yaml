@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: redis
+    image: redis
+  - name: ngnix
+    image: nginx
+  - name: consul
+    image: consul
+  - name : memcached
+    image: memcached
+
